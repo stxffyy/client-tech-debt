@@ -1,0 +1,17 @@
+.wrapper {
+    padding-top: 15px;
+    border: 1px solid #1976d25f;
+    border-radius: 4px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    width: 700px;
+}
+.button {
+    text-align: center;
+    margin: 1px;
+}
+
+.title {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}

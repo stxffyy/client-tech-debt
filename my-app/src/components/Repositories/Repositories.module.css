@@ -1,0 +1,19 @@
+.repo {
+    margin-top: 2rem;
+}
+
+.repo__menu {
+    padding: 0px;
+}
+
+.repo__item {
+    margin-bottom: 1rem !important;
+}
+
+.active__item {
+    margin-bottom: 1rem !important;
+}
+
+.title {
+    font-size: 3rem !important;
+}

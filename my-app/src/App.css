@@ -1,0 +1,56 @@
+* {
+  font-family: Roboto;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "block1 block2";
+  
+}
+
+.body_mistakes {
+grid-area: mistakes;
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+}
+
+.button_send {
+  grid-area: send;
+}
+
+.block1 {
+grid-area: block1;
+}
+
+.div1 {
+  grid-area: div;
+}
+
+/* .block2 {
+  grid-area: block2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: 
+  
+  "mistakes mistakes"
+ 
+} */
+
+.block2 {
+  margin-left: 100px;
+}
+
+.repo__title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mistakes__title {
+  margin-top: 2rem; 
+}

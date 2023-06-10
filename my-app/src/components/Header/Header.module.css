@@ -1,0 +1,71 @@
+/* .element {
+position: relative;
+display: inline-block;
+}
+
+.tooltip {
+visibility: hidden;
+width: 200px;
+background-color: #333;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px;
+position: absolute;
+z-index: 1;
+top: 100%;
+left: 170%;
+transform: translateX(-50%);
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.element:hover .tooltip {
+visibility: visible;
+opacity: 1;
+}
+header {
+background-color: #f1f1f1;
+padding: 20px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+}
+
+nav ul li a {
+text-decoration: none;
+padding: 10px;
+color: #333;
+}
+
+nav ul li a:hover {
+color: #666;
+} */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item {
+    text-decoration:  none;
+    list-style: none;
+    margin-right: 2rem;
+    color: white;
+}
+.item:hover {
+    text-decoration: underline;
+}
+
+.logo_text {
+    font-size: 2rem;
+    font-weight: 900;
+}

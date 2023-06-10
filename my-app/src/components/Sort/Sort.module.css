@@ -1,0 +1,26 @@
+.cursor {
+    cursor: pointer;
+}
+
+.sort {
+    margin-top: 1rem;
+}
+
+.item {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(175, 222, 238, 0.508);
+    color: black;
+    display: inline;
+    cursor: pointer;
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
