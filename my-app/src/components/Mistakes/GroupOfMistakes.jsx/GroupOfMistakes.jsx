@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Mistake from "../Mistake/Mistake"
 import Button from "@mui/material/Button"
 
-function GroupOfMistakes ({ title, description, mistakes, createTask }) {
+function GroupOfMistakes ({ description, mistakes, createTask }) {
   const [open, setOpen] = React.useState(true)
   const toggleOpen = () => {
     setOpen(open => !open)
@@ -23,13 +23,11 @@ function GroupOfMistakes ({ title, description, mistakes, createTask }) {
           mistakes.map((item, index) => {
             return (
               <Mistake
+                id = {item.id}
                 num={index + 1}
-                title={item.message}
-                key={index}
                 url={item.url}
-                createTask={(description, summaryName) => {
-                  createTask(description, summaryName)
-                }}
+                createTask={createTask}
+                key={index}
               />
             )
           }
@@ -43,9 +41,7 @@ function GroupOfMistakes ({ title, description, mistakes, createTask }) {
 }
 
 GroupOfMistakes.propTypes = {
-  title: PropTypes.string,
   mistakes: PropTypes.array,
-  url: PropTypes.any,
   createTask: PropTypes.func,
   description: PropTypes.string
 }

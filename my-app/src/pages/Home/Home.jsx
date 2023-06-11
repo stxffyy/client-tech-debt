@@ -20,7 +20,7 @@ function groupMistakesByRule ({ allMistakes, rules, activeRepositoryIds }) {
   return grouped
 }
 
-const createTask = (description, summaryName) => {
+const createTask = (id) => {
   // Отправка запроса на бэкенд для создания задачи на Jira
   fetch("http://localhost:3010/api/task", {
     method: "POST",
@@ -28,8 +28,7 @@ const createTask = (description, summaryName) => {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      description,
-      summaryName
+      id
     })
   })
     .then(response => {
@@ -100,7 +99,7 @@ function Home () {
                 }}>
                 {groupedMistakes.map(({ rule, mistakes }, index) => (
                   <GroupOfMistakes
-                  title={rule.title}
+                  // title={rule.title}
                   description={rule.description}
                   mistakes={mistakes}
                   createTask={createTask}

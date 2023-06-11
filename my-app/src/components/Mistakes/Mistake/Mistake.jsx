@@ -3,9 +3,9 @@ import classes from "./Mistake.module.css"
 import PropTypes from "prop-types"
 import Button from "@mui/material/Button"
 
-function Mistake ({ num, url, title, createTask }) {
+function Mistake ({ id, num, url, createTask }) {
   const handleCreateTask = () => {
-    createTask(url, title)
+    createTask(id)
   }
 
   return (
@@ -29,7 +29,8 @@ Mistake.propTypes = {
   num: PropTypes.number,
   url: PropTypes.any,
   title: PropTypes.any,
-  createTask: PropTypes.func
+  createTask: PropTypes.func,
+  id: PropTypes.number
 }
 
 export default Mistake
