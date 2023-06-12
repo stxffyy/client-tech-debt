@@ -22,16 +22,13 @@ function Rules () {
             <p className={classes.titleh1}> У каждого репозитория есть:</p>
             <ul className={classes.titleh1}>
                 <li>идентификатор (id)</li>
-                <li>название (title)</li>
                 <li>URL-адрес (url)</li>
-                <li>массив &quot;supporters&quot; с информацией о пользователях, поддерживающих данный репозиторий.</li>
             </ul>
             <h3 className={classes.titleh1}>Массив правил</h3>
             <p className={classes.titleh1}>В элементе массива &quot;rules&quot; указывается информация о правиле.</p>
             <p className={classes.titleh1}>У каждого правила есть:</p>
             <ul className={classes.titleh1}>
                 <li>идентификатор (id)</li>
-                <li>название (title)</li>
                 <li>описание (description)</li>
                 <li>путь к реализации правила (ruleImplementation)</li>
                 <li>шаблон (pattern), который указывает на типы файлов, к которым применяется данное правило.</li>

@@ -22,7 +22,7 @@ function Repositories ({ activeRepositoryIds, onClickRepo, repositories }) {
             disableRipple
             color="primary"
           />
-          <ListItemText className={classes.title} primary={item.title} />
+          <ListItemText className={classes.title} primary={item.url.match(/\/([^/]+)$/)[1]} />
         </ListItem>
       ))}
     </List>

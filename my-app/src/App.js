@@ -15,10 +15,12 @@ function App () {
        <Header className="header" />
        <Container sx={{ mt: "1rem" }}>
       <Routes>
-        <Route path='' element={<Home />} />
+        {/* <Route path='' element={<Home />} /> */}
+        <Route path='/home' element={<Home />} />
         <Route path='/rules' element={<Rules/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/project' element={<Project/>}></Route>
+        {/* <Route path='/about' element={<About/>}/> */}
+        <Route path='/' element={<About/>}/>
+        <Route path='/project' element={<Project/>}/>
       </Routes>
       </Container>
       <Copyright />

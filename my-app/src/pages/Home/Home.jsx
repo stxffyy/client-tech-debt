@@ -2,13 +2,8 @@ import React, { useState } from "react"
 import "../../App.css"
 import Repositories from "../../components/Repositories/Repositories"
 import GroupOfMistakes from "../../components/Mistakes/GroupOfMistakes.jsx/GroupOfMistakes"
-// import InputForLink from "../../components/InputForLink/InputForLink"
-// import AnalyzeButton from "../../components/AnalyzeButton/AnalyzeButton"
 import Box from "@mui/material/Box"
 import { useMistakes, useRules, useRepositories } from "../../hooks/index"
-// import LottieIcon from "../../components/LottieIcon/LottieIcon"
-// import JiraInstanceInput from "../../components/Jira/JiraInstanceInput/JiraInstanceInput"
-// import JiraTokenInput from "../../components/Jira/JiraTokenInput/JiraTokenInput"
 
 function groupMistakesByRule ({ allMistakes, rules, activeRepositoryIds }) {
   // console.log(allMistakes, rules, activeRepositoryIds)
@@ -76,11 +71,6 @@ function Home () {
       <div>
         <div className="container">
           <div className="block1">
-            {/* <InputForLink/>
-            <AnalyzeButton/>
-            <LottieIcon/> */}
-            {/* <JiraInstanceInput/> */}
-            {/* <JiraTokenInput/> */}
             <h1 className="repo__title">Репозитории</h1>
             <Repositories
               repositories={repositories}
@@ -99,7 +89,6 @@ function Home () {
                 }}>
                 {groupedMistakes.map(({ rule, mistakes }, index) => (
                   <GroupOfMistakes
-                  // title={rule.title}
                   description={rule.description}
                   mistakes={mistakes}
                   createTask={createTask}
